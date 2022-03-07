@@ -58,7 +58,8 @@ class GameFragment : Fragment() {
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer {
             it.getContentIfNotHandled()?.let {
                 val currentScore = viewModel.score.value ?: 0
-                val action = GameFragmentDirections.actionGameToScore(currentScore)
+                val action = GameFragmentDirections.actionGameToScore()
+                action.score = currentScore
                 findNavController(this).navigate(action)
             }
         })
@@ -68,7 +69,8 @@ class GameFragment : Fragment() {
 
     fun gameFinished() {
         val currentScore = viewModel.score.value ?: 0
-        val action = GameFragmentDirections.actionGameToScore(currentScore)
+        val action = GameFragmentDirections.actionGameToScore()
+        action.score = currentScore
         buzz(CORRECT_BUZZ_PATTERN)
         findNavController(this).navigate(action)
     }
