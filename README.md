@@ -18,7 +18,7 @@ This is the toy app for lesson 5 of the [Android App Development in Kotlin] at U
 
 Environment
 
-- Kotlin 1.7.20
+- Kotlin 1.8.0
 - Android Studio Electric Eel 2022.1.1
 - Gradle Plugin 7.4.2
 
