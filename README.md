@@ -18,9 +18,9 @@ This is the toy app for lesson 5 of the [Android App Development in Kotlin] at U
 
 Environment
 
-- Kotlin 1.8.0
-- Android Studio Electric Eel 2022.1.1
-- Gradle Plugin 7.4.2
+- Kotlin 1.8.10
+- Android Studio Flamingo 2022.2.1
+- Gradle Plugin 8.0.0
 
 ----
 
@@ -28,5 +28,5 @@ Environment
 language: kotlin
 repo: guessit
 status: archived
-updated: 2023-03-24
+updated: 2023-05-02
 ```
